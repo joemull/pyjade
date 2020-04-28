@@ -76,10 +76,10 @@ Put in parameters for your SQL connection. Visit [`mysql-connector-python`](http
 * `EXPORT_COMPLETE_CURATED_DATASET` Whether to export a complete dataset. (The total items ingested and exported can still be capped at runtime with `part`—see above).
 * `EXPORT_SUBSETS` Whether to export any subsets, as specified below.
 * `SUBSET_PROPERTIES_AND_QUANTITIES` Set the property names for which to export value subsets (if `EXPORT_SUBSETS` is `true`), and how many sets to make for each. The script takes the top values by frequency of occurrence. For example,
-```json
-"dcterms_subject" : 15,
-```
-will export fifteen subsets containing objects tagged with the fifteen most frequently occurring subjects.
+  ```json
+  "dcterms_subject" : 15,
+  ```
+  will export fifteen subsets containing objects tagged with the fifteen most frequently occurring subjects.
 * `OTHER_SUBSET_PROPERTIES_AND_QUANTITIES` Use as a place to hold property names you don't want to export.
 * `PROPERTIES_TO_INCLUDE_FOR_EACH_TYPE` Defines what properties are considered regular for each type. Include or exclude properties to export more or less data for each type.
 * `EXPORT_SEPARATE_SQL_CRUMBS` Properties that occur irregularly in the RDBMS (regular as defined above) will be considered noise by the program and can be optionally exported as `sql_crumbs.xlsx`).
