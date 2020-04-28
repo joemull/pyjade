@@ -5,20 +5,20 @@ A program to export, curate, and transform data from the MySQL database used by 
 
 '''
 
-from diskcache import Cache
-import pandas as pd
-import numpy as np
-import mysql.connector
-from bs4 import BeautifulSoup
 import os
 import re
 import sys
 import json
 import string
 import datetime
+
+import mysql.connector
+from diskcache import Cache
+import pandas as pd
+import numpy as np
+from bs4 import BeautifulSoup
 from tqdm import tqdm
 from safeprint import print
-
 
 '''
 Options

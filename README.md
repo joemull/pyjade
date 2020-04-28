@@ -1,16 +1,16 @@
-# pyjade
+# Pyjade
 
 Joseph Muller
 
 jhmuller@umich.edu
 
-`pyjade` is a program for interacting with the Omeka Classic MySQL database used by the Jane Addams Digital Edition. The program exports, transforms, and curates datasets for use by data modelers, researchers, and programmers.
+Pyjade is a program for interacting with the Omeka Classic MySQL database used by the Jane Addams Digital Edition. The program exports, transforms, and curates datasets for use by data modelers, researchers, and programmers. Export format options include XLSX, CSV, JSON, HTML, and TXT.
 
-## Installation
+## Installing the environment
 The program runs on Python 3.7 and several external libraries, which are installed by the virtual environment library [`virtualenv`](https://pypi.org/project/virtualenv/).
 
 1. Clone or download the repository and navigate into it with Terminal (Mac) or [Git Bash](https://gitforwindows.org/) (Windows).
-2. If you do not have `virtualenv`, install it with `pip install virtualenv` or [another installation method](https://virtualenv.pypa.io/en/latest/installation.html).
+2. If you do not have `virtualenv` installed, install it with `pip install virtualenv` or [another installation method](https://virtualenv.pypa.io/en/latest/installation.html).
 3. Create a virtual environment.
     ```
     virtualenv venv
@@ -35,7 +35,7 @@ The program runs on Python 3.7 and several external libraries, which are install
     deactivate
     ```
 
-## Getting started
+## Running the program
 1. Create a copy of `example_options.json` and name it `options.json`.
 2. Activate the virtual environment if not already activated (see above).
 3. Edit `options.json` as desired--see (see [Options](#Options))
