@@ -6,6 +6,11 @@ jhmuller@umich.edu
 
 Pyjade is a program for interacting with the Omeka Classic MySQL database used by the [Jane Addams Digital Edition](https://github.com/joemull/pyjade/). The program exports, transforms, and curates datasets for use by data modelers, researchers, and programmers. Export format options include XLSX, CSV, JSON, HTML, and TXT.
 
+## Data model
+The program structures the data according to the following model.
+
+![The data model relates entities including text, publication, event, person, organization, and location with relationships including written by, lived in, and located in.](jade_data_model.jpeg)
+
 ## Installing the environment
 The program runs on Python 3.7 and several external libraries, which are installed by the virtual environment library [`virtualenv`](https://pypi.org/project/virtualenv/).
 
